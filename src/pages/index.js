@@ -35,7 +35,7 @@ export default function HomePage() {
           <div className="flex items-center space-x-2 text-black cursor-pointer">
             <span>Follow my Instagram for more content and your growth</span>
             <a
-              href="https://www.instagram.com/navro_developer/"  // <-- Replace with your link
+              href="https://www.instagram.com/amit_makwana.04/"  // <-- Replace with your link
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 hover:text-pink-600"

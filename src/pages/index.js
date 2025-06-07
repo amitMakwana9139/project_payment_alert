@@ -26,7 +26,7 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col items-center">
           <a
-            href="/Freelancer_to_Agency_Guide.pdf"
+            href="/Web_App_Development_Process.pdf"
             download
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
           >

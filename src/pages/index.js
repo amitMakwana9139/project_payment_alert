@@ -26,11 +26,18 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col items-center">
           <a
+            href="/Freelancer_to_Agency_Guide.pdf"
+            download
+            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
+          >
+            Download Freelancer_to_Agency PDF
+          </a>
+          <a
             href="/Web_App_Development_Process.pdf"
             download
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
           >
-            Download PDF
+            Download Web_App_Development_Process PDF
           </a>
           <div className="flex items-center space-x-2 text-black cursor-pointer">
             <span>Follow my Instagram for more content and your growth</span>

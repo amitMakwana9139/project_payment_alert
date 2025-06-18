@@ -26,6 +26,13 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col items-center">
           <a
+            href="/Fiverr Guide Freelancers Agencies.pdf"
+            download
+            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
+          >
+            FIVERR_Guide_FREELANCER_AGENCY PDF
+          </a>
+          <a
             href="/Product_Monetization_Guide.pdf"
             download
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"

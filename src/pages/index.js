@@ -22,10 +22,17 @@ export default function HomePage() {
         whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(59,130,246,0.5)' }}
       >
         <p className="text-lg mb-4 text-center text-black">
-          Download the full PDF guide to help you go from freelancing to launching your own agency.
+          Download the full guide to pick the right tech, hosting, and domain for any website.
         </p>
         <div className="flex flex-col items-center">
           <a
+            href="/Website_Technology_Hosting_Guide.pdf"
+            download
+            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
+          >
+            Website_Technology_Hosting_Guide.pdf
+          </a>
+          {/* <a
             href="/Fiverr Guide Freelancers Agencies.pdf"
             download
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
@@ -52,7 +59,7 @@ export default function HomePage() {
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
           >
             Download Web_App_Development_Process PDF
-          </a>
+          </a> */}
           <div className="flex items-center space-x-2 text-black cursor-pointer">
             <span>Follow my Instagram for more content and your growth</span>
             <a

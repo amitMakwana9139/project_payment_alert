@@ -32,7 +32,7 @@ export default function HomePage() {
           >
             Website_Technology_Hosting_Guide.pdf
           </a>
-          {/* <a
+          <a
             href="/Fiverr Guide Freelancers Agencies.pdf"
             download
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
@@ -59,7 +59,7 @@ export default function HomePage() {
             className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
           >
             Download Web_App_Development_Process PDF
-          </a> */}
+          </a>
           <div className="flex items-center space-x-2 text-black cursor-pointer">
             <span>Follow my Instagram for more content and your growth</span>
             <a

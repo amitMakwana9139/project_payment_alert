@@ -1,84 +1,68 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaInstagram } from 'react-icons/fa';  // Instagram icon from react-icons
+import React from "react";
+import { motion } from "framer-motion";
+import { FaInstagram } from "react-icons/fa";
 
 export default function HomePage() {
+  const pdfs = [
+    { href: "/Client_Handling_Quick_Responses.pdf", label: "Client Handling Quick Responses" },
+    { href: "/Website_Technology_Hosting_Guide.pdf", label: "Website Technology Hosting Guide" },
+    { href: "/Fiverr Guide Freelancers Agencies.pdf", label: "Fiverr Guide for Freelancers & Agencies" },
+    { href: "/Product_Monetization_Guide.pdf", label: "Product Monetization Guide" },
+    { href: "/Freelancer_to_Agency_Guide.pdf", label: "Freelancer to Agency Guide" },
+    { href: "/Web_App_Development_Process.pdf", label: "Web App Development Process" },
+  ];
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 py-8">
+      {/* Title */}
       <motion.h1
-        className="text-4xl font-bold mb-6 text-center text-black"
-        initial={{ opacity: 0, y: -50 }}
+        className="text-4xl font-bold mb-10 text-center text-gray-800"
+        initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
       >
         Freelancer to Agency Guide
       </motion.h1>
 
+      {/* Card Container */}
       <motion.div
-        className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-xl"
-        initial={{ opacity: 0, scale: 0.8 }}
+        className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-5xl"
+        initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(59,130,246,0.5)' }}
+        transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <p className="text-lg mb-4 text-center text-black">
-          Download the full guide to pick the right tech, and client handling question.
+        {/* Description */}
+        <p className="text-lg mb-6 text-center text-gray-700">
+          Download guides to streamline your freelance-to-agency journey with the right tech, handling strategies, and monetization tools.
         </p>
-        <div className="flex flex-col items-center">
-          <a
-            href="/Client_Handling_Quick_Responses.pdf"
-            download
-            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
-          >
-            Client_Handling_Quick_Responses.pdf
-          </a>
-          <a
-            href="/Website_Technology_Hosting_Guide.pdf"
-            download
-            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
-          >
-            Website_Technology_Hosting_Guide.pdf
-          </a>
-          {/* <a
-            href="/Fiverr Guide Freelancers Agencies.pdf"
-            download
-            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
-          >
-            FIVERR_Guide_FREELANCER_AGENCY PDF
-          </a>
-          <a
-            href="/Product_Monetization_Guide.pdf"
-            download
-            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
-          >
-            Product_Monetization_Guide PDF
-          </a>
-          <a
-            href="/Freelancer_to_Agency_Guide.pdf"
-            download
-            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
-          >
-            Download Freelancer_to_Agency PDF
-          </a>
-          <a
-            href="/Web_App_Development_Process.pdf"
-            download
-            className="inline-block px-6 py-3 mb-4 text-black bg-blue-300 rounded-lg hover:bg-blue-400 transition-colors duration-300 font-semibold"
-          >
-            Download Web_App_Development_Process PDF
-          </a> */}
-          <div className="flex items-center space-x-2 text-black cursor-pointer">
-            <span>Follow my Instagram for more content and your growth</span>
+
+        {/* PDF Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+          {pdfs.map((pdf, index) => (
             <a
-              href="https://www.instagram.com/amit_makwana.04/"  // <-- Replace with your link
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-500 hover:text-pink-600"
-              aria-label="Instagram"
+              key={index}
+              href={pdf.href}
+              download
+              className="w-full px-4 py-3 bg-blue-200 text-gray-800 font-semibold rounded-lg shadow hover:bg-blue-300 transition duration-300 text-center truncate"
+              title={pdf.label}
             >
-              <FaInstagram size={24} />
+              {pdf.label}
             </a>
-          </div>
+          ))}
+        </div>
+
+        {/* Instagram Section */}
+        <div className="flex justify-center items-center space-x-3 mt-6 text-gray-700">
+          <span className="text-sm">Follow me on Instagram for more content</span>
+          <a
+            href="https://www.instagram.com/amit_makwana.04/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500 hover:text-pink-600"
+            aria-label="Instagram"
+          >
+            <FaInstagram size={24} />
+          </a>
         </div>
       </motion.div>
     </div>

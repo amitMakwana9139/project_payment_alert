@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function HomePage() {
   const pdfs = [
+    { href: "/Project_Lifecycle_Roles.pdf", label: "Client attract Client" },
     { href: "/Client_Handling_Quick_Responses.pdf", label: "Client Handling Quick Responses" },
     { href: "/Website_Technology_Hosting_Guide.pdf", label: "Website Technology Hosting Guide" },
     { href: "/Fiverr Guide Freelancers Agencies.pdf", label: "Fiverr Guide for Freelancers & Agencies" },
@@ -33,7 +34,7 @@ export default function HomePage() {
       >
         {/* Description */}
         <p className="text-lg mb-6 text-center text-gray-700">
-          Download guides to streamline your freelance-to-agency journey with the right tech, handling strategies, and monetization tools.
+          Download guides to streamline your freelance-to-agency journey.
         </p>
 
         {/* PDF Grid */}

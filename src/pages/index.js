@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function HomePage() {
   const pdfs = [
+    { href: "/All_Basic_IT_Intern_Questions.pdf", label: "Internship Interview Questions" },
     { href: "/Project_Lifecycle_Roles.pdf", label: "Client attract Client" },
     { href: "/Client_Handling_Quick_Responses.pdf", label: "Client Handling Quick Responses" },
     { href: "/Website_Technology_Hosting_Guide.pdf", label: "Website Technology Hosting Guide" },

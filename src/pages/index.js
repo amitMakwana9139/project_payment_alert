@@ -4,12 +4,13 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function HomePage() {
   const pdfs = [
+    { href: "/All_Prompts.pdf", label: "Prompt list for 3D image generate" },
     { href: "/AI_Basics_QA_Examples.pdf", label: "AI basic question and answer" },
-    { href: "/supabase_overview.pdf", label: "Full overview of supabase" },
     { href: "/All_Basic_IT_Intern_Questions.pdf", label: "Internship Interview Questions" },
-    { href: "/Project_Lifecycle_Roles.pdf", label: "Client attract Client" },
-    { href: "/Client_Handling_Quick_Responses.pdf", label: "Client Handling Quick Responses" },
     { href: "/Website_Technology_Hosting_Guide.pdf", label: "Website Technology Hosting Guide" },
+    // { href: "/supabase_overview.pdf", label: "Full overview of supabase" },
+    // { href: "/Project_Lifecycle_Roles.pdf", label: "Client attract Client" },
+    // { href: "/Client_Handling_Quick_Responses.pdf", label: "Client Handling Quick Responses" },
     // { href: "/Fiverr Guide Freelancers Agencies.pdf", label: "Fiverr Guide for Freelancers & Agencies" },
     // { href: "/Product_Monetization_Guide.pdf", label: "Product Monetization Guide" },
     // { href: "/Freelancer_to_Agency_Guide.pdf", label: "Freelancer to Agency Guide" },

@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function HomePage() {
   const pdfs = [
+    { href: "/freelancer_payment_methods.pdf", label: "Project payment methods Alert" },
     { href: "/fiverr_gig_ranking_tips.pdf", label: "fiverr gig ranking tips" },
     { href: "/All_Prompts.pdf", label: "Prompt list for 3D image generate" },
     { href: "/AI_Basics_QA_Examples.pdf", label: "AI basic question and answer" },
